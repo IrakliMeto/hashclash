@@ -1,12 +1,9 @@
 .hashclash {
+  z-index: 999;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(
-      67.24deg,
-      rgba(255, 0, 255, 0.15) 28.51%,
-      rgba(12, 28, 42, 0) 100.76%
-    ),
-    radial-gradient(122.07% 72.5% at 54.29% 54.75%, #009e82 0%, #0c1a1d 100%);
+  position: relative;
+  pointer-events: none;
 
   &__sidebar {
     max-width: 160px;
@@ -42,6 +39,7 @@
     position: absolute;
     top: 143px;
     left: 0;
+    pointer-events: all;
   }
 
   &__sidebar-icon {
@@ -152,6 +150,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    pointer-events: all;
   }
 
   &__header-button {

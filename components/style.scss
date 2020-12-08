@@ -96,7 +96,6 @@
     letter-spacing: 0.05em;
     color: #ffffff;
     transition: 0.3s linear;
-    cursor: pointer;
 
     &:hover {
       background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
@@ -160,9 +159,8 @@
 
   &__content-container {
     max-width: 700px;
-    height: 528px;
+    height: auto;
     margin-top: 40px;
-    // height: auto;
     pointer-events: none;
     box-shadow: inset 3px 3px 25px 3px #00b2ff;
     border-radius: 20px;
@@ -181,8 +179,18 @@
     color: #ffffff;
 
     & > span {
-      color: yellowgreen;
+      background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+  }
+
+  &__content-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 12px;
   }
 
   &__content-container-bar-holder {
@@ -190,6 +198,7 @@
     height: 336px;
     margin-top: 24px;
     margin-left: 20px;
+    margin-right: 34px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,6 +230,7 @@
     top: 22px;
     right: 4px;
     z-index: 2;
+    cursor: pointer;
   }
 
   &__content-container-bar {
@@ -270,8 +280,148 @@
       inset 0.72109px -0.72109px 2.16327px 0.72109px rgba(40, 38, 63, 0.66),
       inset -0.72109px 0.72109px 3px rgba(0, 255, 194, 0.7);
     border-radius: 2.875px;
-    border: none;
-    outline: none;
+  }
+
+  &__game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__game-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__game-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: all;
+  }
+
+  &__game-username {
+    padding-top: 19px;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__game-user-img {
+    width: 88px;
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    background-image: url("/assets/images/icon-unregistered.svg");
+    background-size: contain;
+  }
+
+  &__game-button {
+    width: 128px;
+    height: 128px;
+    background: linear-gradient(203.82deg, #0a6053 1.79%, #132431 84.68%);
+    box-shadow: inset 4.01302px -4.99462px 4.99462px #096d5f,
+      inset -4.01302px 4.01302px 8.02604px 1.60521px #0f2129;
+    border-radius: 16.0521px;
+  }
+
+  &__game-content-divider {
+    height: 78px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: inset -2px 3px 1px #114e4c;
+
+    &--footer {
+      height: 122px;
+      margin-top: 23px;
+      margin-left: 78px;
+      margin-right: 43px;
+    }
+  }
+
+  &__game-level {
+    margin: 18px 0;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__game-center-button {
+    width: 152px;
+    height: 152px;
+    margin: 0 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 2px white;
+  }
+
+  &__game-footer {
+    margin-left: -35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__game-footer-box {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    pointer-events: all;
+  }
+
+  &__game-footer-box-text {
+    margin-bottom: 20px;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__game-footer-smile {
+    width: 34px;
+    height: 34px;
+    margin-right: 18px;
     cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__game-footer-info {
+    width: 275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &:first-child {
+      margin-bottom: 33px;
+    }
   }
 }

@@ -1,5 +1,4 @@
 .hashclash {
-  z-index: 999;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -15,6 +14,11 @@
   }
 
   &__sidebar-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: linear-gradient(
         67.24deg,
         rgba(255, 0, 255, 0.15) 28.51%,
@@ -23,16 +27,7 @@
       radial-gradient(127.46% 47.79% at 43.93% 52.21%, #009e6c 0%, #0c1a1d 100%);
     border-radius: 0px 20px 20px 0px;
     opacity: 0.4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
-
-  // &__sidebar-content {
-  //   position: relative;
-  // }
 
   &__sidebar-content-holder {
     width: 100%;
@@ -45,11 +40,11 @@
   &__sidebar-icon {
     width: 17px;
     height: 17px;
-    object-fit: contain;
-    cursor: pointer;
     position: absolute;
     top: -98px;
     right: 24px;
+    object-fit: contain;
+    cursor: pointer;
 
     & path {
       stroke: white;
@@ -62,11 +57,11 @@
   }
 
   &__sidebar-navigation-list {
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    margin-top: 48px;
 
     &:after {
       width: 160px;
@@ -85,10 +80,10 @@
   }
 
   &__sidebar-navigation-link {
+    padding: 11px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 11px 0;
     font-family: "russoone", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -186,11 +181,11 @@
   }
 
   &__content-holder {
+    padding-bottom: 12px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-bottom: 12px;
   }
 
   &__content-container-bar-holder {
@@ -202,7 +197,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     position: relative;
     pointer-events: all;
   }
@@ -423,5 +417,15 @@
     &:first-child {
       margin-bottom: 33px;
     }
+  }
+
+  &__footer {
+    max-width: 1072px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__footer-box {
+    position: relative;
   }
 }

@@ -397,9 +397,50 @@ html {
     width: 152px;
     height: 152px;
     margin: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 12px;
     border: solid 2px white;
+    box-sizing: border-box;
+
+    &--active {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.08em;
+      border: 3px solid #ffffff;
+      box-shadow: inset -1px 1.5px 1.5px #0f5f5c;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #2f6c61 0%, #133333 100%);
+      box-shadow: inset 4.01302px -4.01302px 12.0391px 4.01302px rgba(40, 38, 63, 0.66),
+        inset -4.01302px 4.01302px 8.02604px rgba(0, 255, 194, 0.7);
+    }
+
+    &--win {
+      font-size: 42px;
+      line-height: 46px;
+      letter-spacing: 0.08em;
+      background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--medium-px {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &--small-px {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__game-footer {
@@ -410,7 +451,7 @@ html {
   }
 
   &__game-footer-box {
-    margin-top: 65px;
+    margin-top: 72px;
     display: flex;
     flex-direction: column;
     align-items: self-end;
@@ -463,9 +504,11 @@ html {
     width: 100%;
     height: auto;
     margin-top: 25px;
+    padding-left: 26px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     position: relative;
     z-index: 1;
     pointer-events: all;
@@ -490,7 +533,7 @@ html {
     flex-direction: column;
     align-items: center;
     position: relative;
-    background-size: cover;
+    background-size: contain;
     background-color: transparent;
     cursor: pointer;
 
@@ -529,29 +572,49 @@ html {
   &__footer-button {
     width: 100%;
     height: 100%;
-    padding: 32px 12px 20px 12px;
+    padding: 32px 12px 20px 21px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    font-family: Russo One;
+    font-family: "russoone", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
     text-align: center;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffffff;
 
-    & > p {
-      font-size: 12px;
-      line-height: 14px;
+    &--standard {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+
+      & > p {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      & > span {
+        font-size: 28px;
+        line-height: 34px;
+      }
     }
 
-    & > span {
-      font-size: 28px;
-      line-height: 34px;
+    &--different {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+
+      & > p {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      & > span {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
   }
 }

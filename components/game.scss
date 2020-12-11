@@ -1,6 +1,5 @@
 body {
   font-family: "russoone";
-  overflow: hidden;
 }
 
 .hashclash {
@@ -546,12 +545,12 @@ body {
   &__footer-box {
     max-width: 200px;
     width: 100%;
-    margin-right: 18px;
+    margin-left: 18px;
     position: relative;
     pointer-events: all;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 

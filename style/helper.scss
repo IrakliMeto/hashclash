@@ -14,6 +14,15 @@
   background-blend-mode: color-dodge, normal;
 }
 
+.particles-js-authorized {
+  background: linear-gradient(
+      67.24deg,
+      rgba(255, 0, 255, 0.15) 28.51%,
+      rgba(12, 28, 42, 0) 100.76%
+    ),
+    radial-gradient(122.07% 72.5% at 54.29% 54.75%, #009e82 0%, #0c1a1d 100%) !important;
+}
+
 button {
   border: none;
   outline: none;

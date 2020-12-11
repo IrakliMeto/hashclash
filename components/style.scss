@@ -1,5 +1,6 @@
 body {
   font-family: "russoone";
+  overflow: hidden;
 }
 
 .hashclash {
@@ -733,6 +734,16 @@ body {
     align-items: center;
     position: relative;
 
+    &:hover {
+      background: linear-gradient(
+          270deg,
+          rgba(0, 169, 255, 0.27) 0.31%,
+          rgba(17, 76, 106, 0) 3.92%
+        ),
+        #0a1e1e;
+      opacity: 0.5;
+    }
+
     &::after {
       width: 100%;
       height: 1px;
@@ -813,5 +824,69 @@ body {
     &--active {
       display: flex;
     }
+  }
+
+  &__table-bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    pointer-events: all;
+  }
+
+  &__table-bottom-text {
+    width: 100%;
+    margin: 9px 0 38px 0;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__table-balance {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__table-deposit-button {
+    max-width: 298px;
+    width: 100%;
+    height: 47px;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(
+        356.31deg,
+        rgba(255, 0, 255, 0.19) 4.46%,
+        rgba(12, 28, 42, 0) 132.9%
+      ),
+      linear-gradient(180deg, #3c8998 0%, #183d4d 57.81%, #102b2e 100%);
+    box-shadow: 0px 0px 3.24074px #ffffff,
+      3.24074px 3.88889px 16.2037px 0.648148px #da00fd,
+      -1.2963px -1.2963px 9.72222px #00ffe0;
+    border-radius: 64.8148px;
   }
 }

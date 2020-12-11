@@ -1,5 +1,4 @@
-body,
-html {
+body {
   font-family: "russoone";
 }
 
@@ -209,7 +208,7 @@ html {
   &__content-container-title {
     margin: 0 auto;
     padding: 21px 0;
-    font-family: "russone";
+    font-family: "russoone";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -714,11 +713,14 @@ html {
 
   &__table-informations {
     width: 100%;
+    max-height: 328px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
     z-index: 1;
+    overflow-y: auto;
   }
 
   &__table-information {
@@ -738,10 +740,12 @@ html {
       bottom: 0;
       left: 0px;
       content: "";
-      background: radial-gradient(
-        122.07% 72.5% at 54.29% 54.75%,
-        #00467a 0%,
-        #0c1a1d 100%
+      background-image: linear-gradient(
+        270deg,
+        rgba(24, 113, 123, 0) 0%,
+        rgba(145, 244, 255, 0.3) 17.19%,
+        rgba(145, 244, 255, 0.67) 54.69%,
+        rgba(46, 36, 78, 0) 100%
       );
     }
   }
@@ -772,6 +776,9 @@ html {
       height: 26px;
       background-image: url("/assets/images/blue-arrow-table.svg");
       cursor: pointer;
+      border: 0;
+      outline: none;
+      background-color: transparent;
 
       &:focus {
         background-image: url("/assets/images/blue-arrow-press.svg");
@@ -786,7 +793,9 @@ html {
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      border: 3px solid black;
+      background-image: url("/assets/images/Vector.svg");
+      background-position: center;
+      background-size: cover;
     }
   }
 

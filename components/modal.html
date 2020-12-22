@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/modal.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="modal-information">
+      <div class="modal-information__header">
+        <div class="modal-information__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="modal-information__close-icon"
+        />
+      </div>
+
+      <div class="modal-information__content">
+        <p class="modal-information__text">
+          hooray! You have reached super level and can already exchange 10.50
+          etc to 1 ltc! exchange?
+        </p>
+
+        <div class="modal-information__buttons-holder">
+          <button
+            class="button modal-information__button modal-information__button--no"
+          >
+            NO
+          </button>
+          <button class="button button--primary modal-information__button">
+            YES
+          </button>
+        </div>
+
+        <div class="modal-information__checkbox-parent">
+          <div class="checkbox">
+            <label
+              class="checkbox__buttons-box modal-information__checkbox-box"
+            >
+              <input type="checkbox" checked="" />
+              <span class="checkbox__buttons-checkmark"></span>
+            </label>
+
+            <span
+              class="checkbox__buttons-text modal-information__checkbox-text"
+            >
+              Dont show me this notice anymore
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

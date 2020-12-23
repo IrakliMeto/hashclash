@@ -160,3 +160,47 @@ button {
     color: #383838;
   }
 }
+
+.language-dropdown {
+  margin-left: 16px;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__arrow {
+    margin-left: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    & > img {
+      width: 14px;
+      height: 10px;
+      object-fit: contain;
+      transform: rotate(180deg);
+    }
+
+    &:focus img {
+      transform: none;
+    }
+  }
+}

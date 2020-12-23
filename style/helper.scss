@@ -207,10 +207,11 @@ button {
   &__list {
     width: 104px;
     height: auto;
+    display: none;
     position: absolute;
     top: 60px;
     right: 20px;
-    z-index: 100;
+    z-index: 9 !important;
     background: linear-gradient(
         90deg,
         rgba(255, 0, 255, 0.12) 30.28%,
@@ -218,6 +219,11 @@ button {
       ),
       radial-gradient(196.89% 118.75% at 100% 10.42%, #009e6c 0%, #152e3d 100%);
     border-radius: 10px;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item {

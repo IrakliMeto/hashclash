@@ -139,6 +139,7 @@ body {
     position: relative;
     z-index: 1;
     pointer-events: all;
+    align-items: flex-end;
   }
 
   &__header-icon {
@@ -165,8 +166,9 @@ body {
   &__header-authorized-right-box {
     margin-left: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: end;
+    height: 36px;
   }
 
   &__header-authorized-icon {
@@ -178,7 +180,7 @@ body {
   }
 
   &__content {
-    margin-top: 40px;
+    margin-top: 48px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1039,55 +1041,5 @@ body {
       3.24074px 3.88889px 16.2037px 0.648148px #da00fd,
       -1.2963px -1.2963px 9.72222px #00ffe0;
     border-radius: 64.8148px;
-  }
-}
-
-//TODO:TEST
-.zuraba {
-  width: 26px;
-  height: 26px;
-  background: linear-gradient(
-    140.14deg,
-    #000000 14.5%,
-    #969696 14.51%,
-    #191919 22.64%,
-    #969696 85.5%
-  );
-
-  mix-blend-mode: color-dodge;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__shvili {
-    width: 23px;
-    height: 23px;
-    background: rgba(0, 0, 0, 0.36);
-    background-blend-mode: hard-light;
-    box-shadow: inset 0px 0px 0.80597 #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-  }
-
-  &__shvilishvili {
-    width: 21px;
-    height: 21px;
-    background: linear-gradient(
-      140.13deg,
-      #1f1f1f 14.5%,
-      #434343 44.51%,
-      #5b5b5b 69.82%,
-      #646464 85.49%
-    );
-    mix-blend-mode: color-dodge;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }

@@ -91,7 +91,7 @@ button {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 160px;
   overflow: hidden;
   background: rgba(8, 7, 7, 0.6);
 }
@@ -293,5 +293,57 @@ button {
       position: relative;
       z-index: 3;
     }
+  }
+}
+
+// inputs
+.main-input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 28px 5px 8px;
+  font-family: "russoone";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border: 1px solid rgba(19, 36, 48, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+
+  &::placeholder {
+    padding: 5px 28px 5px 8px;
+    font-family: "russoone";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  &--error {
+    border: 1px solid #ee9152;
+  }
+}
+
+//error message
+.error-message {
+  max-width: 253px;
+  width: 100%;
+  margin-top: 3px;
+  padding-left: 9px;
+  display: none;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #ee9152;
+
+  &--active {
+    display: flex;
   }
 }

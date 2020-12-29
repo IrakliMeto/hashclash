@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/login.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal">
+      <div class="standard-modal__header">
+        <div class="standard-modal__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+
+        <div class="language-dropdown standard-modal__language-dropdown">
+          <div class="language-dropdown__box">
+            EN
+
+            <button
+              class="language-dropdown__arrow standard-modal__language-dropdown-arrow"
+            >
+              <img src="/assets/images/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div
+            class="language-dropdown__list standard-modal__language-dropdown-list"
+          >
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--backdrop"></div>
+              <div class="language-dropdown__item--holder">
+                English
+              </div>
+            </div>
+
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--holder">
+                Russian
+              </div>
+            </div>
+
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--holder">
+                Language
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="authentification">
+        <div class="authentification__buttons-holder">
+          <div>
+            <div class="authentification__button--backdrop"></div>
+            <button class="button authentification__button">sign in</button>
+          </div>
+
+          <div>
+            <button
+              class="button authentification__button authentification__button--active"
+            >
+              log in
+            </button>
+          </div>
+        </div>
+
+        <div class="login">
+          <div class="login__input-holder">
+            <span class="login__input-title">Login</span>
+            <input
+              type="text"
+              class="main-input login__input main-input--error"
+            />
+          </div>
+
+          <div class="login__input-holder">
+            <span class="login__input-title">Password</span>
+            <div class="login__input-parent">
+              <button class="login__input-icon-button"></button>
+              <input
+                type="text"
+                class="main-input login__input main-input--error"
+              />
+            </div>
+            <div class="error-message error-message--active">
+              *You have entered the wrong Login or Password. Please, try again
+            </div>
+          </div>
+
+          <p class="login__forgot">
+            Forgot <a href="#"> Login </a> or
+            <a href="#">
+              Password
+            </a>
+          </p>
+
+          <button class="button login__button">
+            log in
+          </button>
+
+          <p class="login__text">
+            There are empty fields left
+          </p>
+
+          <a href="#" class="login__link">
+            legal information
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

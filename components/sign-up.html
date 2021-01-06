@@ -84,21 +84,29 @@
 
       <div class="sign-up">
         <div class="sign-up__step-holder">
+          <div class="sign-up__step-animation">
+            <div class="sign-up__step-animation--backdrop--left"></div>
+            <h4 class="sign-up__step">
+              step 1
+            </h4>
+          </div>
+         
           <h5 class="sign-up__step-text">
             welcome! let's start with a short introduction
           </h5>
 
-          <h4 class="sign-up__step">
-            step 1/2
-          </h4>
-
-          <div class="sign-up__step-line">
-            <span class="sign-up__step-line-cursor"></span>
+          <div class="sign-up__step-animation">
+            <div class="sign-up__step-animation--backdrop--right"></div>
+            <h4 class="sign-up__step">
+              step 2
+            </h4>
           </div>
         </div>
 
         <div class="sign-up__content">
-          <div class="sign-up__input-holder">
+          <div class="sign-up__first-step">
+            <!-- first step -->
+            <div class="sign-up__input-holder">
             <span class="sign-up__input-title">Name</span>
             <input
               type="text"
@@ -210,7 +218,9 @@
           <div class="sign-up__content-bottom">
             <div class="sign-up__checkbox-parent">
               <div class="checkbox">
-                <label class="checkbox__buttons-box sign-up__checkbox-box">
+                <label
+                  class="checkbox__buttons-box sign-up__checkbox-box sign-up__checkbox-box--active"
+                >
                   <input type="checkbox" />
                   <span class="checkbox__buttons-checkmark"></span>
                 </label>
@@ -238,6 +248,240 @@
                 There are empty fields left
               </p>
             </div>
+          </div>
+          </div>
+
+            <!-- second step -->
+            <!-- <div class="sign-up__second-step">
+              <div class="sign-up__input-holder">
+                <span class="sign-up__input-title">Login</span>
+                <input
+                  type="text"
+                  placeholder="Enter your Login here"
+                  class="main-input sign-up__input main-input--error"
+                />
+
+                <div class="error-message error-message--active">
+                  *Error Error Error Error Error Error!
+                </div>
+              </div>
+
+              <div class="sign-up__input-holder">
+                <span class="sign-up__input-title">Phone number</span>
+
+                <div class="sign-up__input-parent">
+                  <img
+                    class="sign-up__input-flag-icon"
+                    src="/assets/images/US.svg"
+                    alt="Flag"
+                  />
+                  <input
+                    type="text"
+                    placeholder=""
+                    class="main-input sign-up__input main-input--phone main-input--error"
+                  />
+                </div>
+
+                <div class="error-message error-message--active">
+                  *Error Error Error Error Error Error!
+                </div>
+              </div>
+
+              <div class="sign-up__input-holder">
+                <span class="sign-up__input-title">Password</span>
+
+                <div class="sign-up__input-parent">
+                  <img
+                    class="sign-up__input-password-icon"
+                    src="/assets/images/visibility.svg"
+                    alt="Icon"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Enter your Password here"
+                    class="main-input sign-up__input main-input--error"
+                  />
+                </div>
+
+                <div class="error-message error-message--active">
+                  *Error Error Error Error Error Error!
+                </div>
+              </div>
+
+              <div class="sign-up__validations">
+                <div class="sign-up__validation sign-up__validation--active">
+                  <svg
+                    class="sign-up__validation-icon"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="grad1"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: rgb(219, 255, 0); stop-opacity: 1;"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: rgb(116, 255, 0); stop-opacity: 1;"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M4.52447 0.463526C4.67415 0.00287056 5.32585 0.00286996 5.47553 0.463525L6.23483 2.80041C6.30176 3.00642 6.49374 3.1459 6.71036 3.1459H9.1675C9.65186 3.1459 9.85325 3.76571 9.46139 4.05041L7.47352 5.49468C7.29828 5.622 7.22495 5.84768 7.29188 6.0537L8.05118 8.39058C8.20086 8.85123 7.67362 9.23429 7.28176 8.94959L5.29389 7.50532C5.11865 7.378 4.88135 7.378 4.70611 7.50532L2.71824 8.94959C2.32638 9.23429 1.79914 8.85123 1.94882 8.39058L2.70812 6.0537C2.77505 5.84768 2.70172 5.622 2.52648 5.49468L0.538611 4.05041C0.146754 3.76571 0.348141 3.1459 0.832503 3.1459H3.28964C3.50626 3.1459 3.69824 3.00642 3.76517 2.80041L4.52447 0.463526Z"
+                      fill="#EE9152"
+                    />
+                  </svg>
+
+                  <span>8-12 Characters</span>
+                </div>
+
+                <div class="sign-up__validation sign-up__validation--active">
+                  <svg
+                    class="sign-up__validation-icon"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="grad1"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: rgb(219, 255, 0); stop-opacity: 1;"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: rgb(116, 255, 0); stop-opacity: 1;"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M4.52447 0.463526C4.67415 0.00287056 5.32585 0.00286996 5.47553 0.463525L6.23483 2.80041C6.30176 3.00642 6.49374 3.1459 6.71036 3.1459H9.1675C9.65186 3.1459 9.85325 3.76571 9.46139 4.05041L7.47352 5.49468C7.29828 5.622 7.22495 5.84768 7.29188 6.0537L8.05118 8.39058C8.20086 8.85123 7.67362 9.23429 7.28176 8.94959L5.29389 7.50532C5.11865 7.378 4.88135 7.378 4.70611 7.50532L2.71824 8.94959C2.32638 9.23429 1.79914 8.85123 1.94882 8.39058L2.70812 6.0537C2.77505 5.84768 2.70172 5.622 2.52648 5.49468L0.538611 4.05041C0.146754 3.76571 0.348141 3.1459 0.832503 3.1459H3.28964C3.50626 3.1459 3.69824 3.00642 3.76517 2.80041L4.52447 0.463526Z"
+                      fill="#EE9152"
+                    />
+                  </svg>
+
+                  <span>1 Uppercase Character</span>
+                </div>
+
+                <div class="sign-up__validation">
+                  <svg
+                    class="sign-up__validation-icon"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="grad1"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: rgb(219, 255, 0); stop-opacity: 1;"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: rgb(116, 255, 0); stop-opacity: 1;"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M4.52447 0.463526C4.67415 0.00287056 5.32585 0.00286996 5.47553 0.463525L6.23483 2.80041C6.30176 3.00642 6.49374 3.1459 6.71036 3.1459H9.1675C9.65186 3.1459 9.85325 3.76571 9.46139 4.05041L7.47352 5.49468C7.29828 5.622 7.22495 5.84768 7.29188 6.0537L8.05118 8.39058C8.20086 8.85123 7.67362 9.23429 7.28176 8.94959L5.29389 7.50532C5.11865 7.378 4.88135 7.378 4.70611 7.50532L2.71824 8.94959C2.32638 9.23429 1.79914 8.85123 1.94882 8.39058L2.70812 6.0537C2.77505 5.84768 2.70172 5.622 2.52648 5.49468L0.538611 4.05041C0.146754 3.76571 0.348141 3.1459 0.832503 3.1459H3.28964C3.50626 3.1459 3.69824 3.00642 3.76517 2.80041L4.52447 0.463526Z"
+                      fill="#EE9152"
+                    />
+                  </svg>
+
+                  <span>1 Lowercase Character</span>
+                </div>
+
+                <div class="sign-up__validation">
+                  <svg
+                    class="sign-up__validation-icon"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="grad1"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: rgb(219, 255, 0); stop-opacity: 1;"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: rgb(116, 255, 0); stop-opacity: 1;"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M4.52447 0.463526C4.67415 0.00287056 5.32585 0.00286996 5.47553 0.463525L6.23483 2.80041C6.30176 3.00642 6.49374 3.1459 6.71036 3.1459H9.1675C9.65186 3.1459 9.85325 3.76571 9.46139 4.05041L7.47352 5.49468C7.29828 5.622 7.22495 5.84768 7.29188 6.0537L8.05118 8.39058C8.20086 8.85123 7.67362 9.23429 7.28176 8.94959L5.29389 7.50532C5.11865 7.378 4.88135 7.378 4.70611 7.50532L2.71824 8.94959C2.32638 9.23429 1.79914 8.85123 1.94882 8.39058L2.70812 6.0537C2.77505 5.84768 2.70172 5.622 2.52648 5.49468L0.538611 4.05041C0.146754 3.76571 0.348141 3.1459 0.832503 3.1459H3.28964C3.50626 3.1459 3.69824 3.00642 3.76517 2.80041L4.52447 0.463526Z"
+                      fill="#EE9152"
+                    />
+                  </svg>
+
+                  <span>1 Digit</span>
+                </div>
+              </div>
+
+              <p class="sign-up__step2-text">
+                As a safety precaution, your password must NOT countain your
+                Name, Username, Email, 2 similar characters in a row, spaces and
+                special characters
+              </p>
+
+              <span class="sign-up__step2-span">
+                *Please note that all fields are required
+              </span>
+
+              <button
+                class="button sign-up__content-button sign-up__content-button--back"
+              >
+                back
+              </button>
+
+              <div class="sign-up__content-bottom-box">
+                <button
+                  class="button sign-up__content-button sign-up__content-button--active"
+                >
+                  register
+                </button>
+
+                <p class="sign-up__content-error-text">
+                  There are empty fields left
+                </p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>

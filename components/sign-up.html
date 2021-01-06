@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/sign-up.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal sign-up__modal">
+      <div class="standard-modal__header">
+        <div class="standard-modal__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+
+        <div class="language-dropdown standard-modal__language-dropdown">
+          <div class="language-dropdown__box">
+            EN
+
+            <button
+              class="language-dropdown__arrow standard-modal__language-dropdown-arrow"
+            >
+              <img src="/assets/images/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div
+            class="language-dropdown__list standard-modal__language-dropdown-list"
+          >
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--backdrop"></div>
+              <div class="language-dropdown__item--holder">
+                English
+              </div>
+            </div>
+
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--holder">
+                Russian
+              </div>
+            </div>
+
+            <div class="language-dropdown__item">
+              <div class="language-dropdown__item--holder">
+                Language
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="authentification">
+        <div class="authentification__buttons-holder sign-up__button-holder">
+          <div>
+            <button
+              class="button authentification__button authentification__button--active sign-up__button"
+            >
+              sign in
+            </button>
+          </div>
+
+          <div>
+            <div class="sign-up__button-backdrop"></div>
+            <button class="button authentification__button">
+              log in
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sign-up">
+        <div class="sign-up__step-holder">
+          <h5 class="sign-up__step-text">
+            welcome! let's start with a short introduction
+          </h5>
+
+          <h4 class="sign-up__step">
+            step 1/2
+          </h4>
+
+          <div class="sign-up__step-line">
+            <span class="sign-up__step-line-cursor"></span>
+          </div>
+        </div>
+
+        <div class="sign-up__content">
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">Name</span>
+            <input
+              type="text"
+              placeholder="Enter your Name here"
+              class="main-input sign-up__input main-input--error"
+            />
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">E-mail</span>
+            <input
+              type="email"
+              placeholder="Enter your Email here"
+              class="main-input sign-up__input main-input--error"
+            />
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">Surname</span>
+            <input
+              type="text"
+              placeholder="Enter your Surname here"
+              class="main-input sign-up__input main-input--error"
+            />
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">Birth date</span>
+            <div class="sign-up__select-holder">
+              <select class="sign-up__input date-select">
+                <option value="">day</option>
+                <option value="number">1</option>
+                <option value="number">2</option>
+                <option value="number">3</option>
+              </select>
+
+              <select class="sign-up__input date-select">
+                <option value="">mounth</option>
+                <option value="number">january</option>
+                <option value="number">01</option>
+                <option value="number">11</option>
+              </select>
+
+              <select class="sign-up__input date-select">
+                <option value="">year</option>
+                <option value="number">0522</option>
+                <option value="number">01</option>
+                <option value="number">11</option>
+              </select>
+            </div>
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">Country</span>
+            <select class="sign-up__input date-select main-input">
+              <option value="">Choose your country here</option>
+              <option value="number">0522</option>
+              <option value="number">01</option>
+              <option value="number">11</option>
+            </select>
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__input-holder">
+            <span class="sign-up__input-title">Gender</span>
+
+            <div class="sign-up__select-holder">
+              <input
+                class="main-input sign-up__input sign-up__input-button sign-up__input-button--active"
+                type="button"
+                value="Male"
+              />
+              <input
+                class="main-input sign-up__input sign-up__input-button"
+                type="button"
+                value="Female"
+              />
+              <input
+                class="main-input sign-up__input sign-up__input-button"
+                type="button"
+                value="Other"
+              />
+            </div>
+
+            <div class="error-message error-message--active">
+              *Error Error Error Error Error Error!
+            </div>
+          </div>
+
+          <div class="sign-up__content-bottom">
+            <div class="sign-up__checkbox-parent">
+              <div class="checkbox">
+                <label class="checkbox__buttons-box sign-up__checkbox-box">
+                  <input type="checkbox" />
+                  <span class="checkbox__buttons-checkmark"></span>
+                </label>
+
+                <h6 class="sign-up__checkbox-text">
+                  I’m over 18 years of age and I accept these
+                  <a href="javascript:void(0);"> Terms and Conditions </a> and
+                  <a href="javascript:void(0);"> Privacy Policy </a>
+                </h6>
+              </div>
+            </div>
+
+            <p class="sign-up__content-bottom-text">
+              *Please note that all fields are require
+            </p>
+
+            <div class="sign-up__content-bottom-box">
+              <button
+                class="button sign-up__content-button sign-up__content-button--active"
+              >
+                next
+              </button>
+
+              <p class="sign-up__content-error-text">
+                There are empty fields left
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

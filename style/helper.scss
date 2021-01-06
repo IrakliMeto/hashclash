@@ -147,18 +147,6 @@ button {
     position: absolute;
     display: none;
   }
-
-  &__buttons-text {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.38;
-    letter-spacing: normal;
-    text-align: left;
-    color: #383838;
-  }
 }
 
 .language-dropdown {
@@ -345,5 +333,27 @@ button {
 
   &--active {
     display: flex;
+  }
+}
+
+//select
+.date-select {
+  width: 96px;
+  margin-right: 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border: 1px solid rgba(19, 36, 48, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0px;
   }
 }

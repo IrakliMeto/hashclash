@@ -116,6 +116,7 @@
     padding: 12px 0;
     margin: 0 12px;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -424,5 +425,10 @@
     align-items: center;
     letter-spacing: 0.05em;
     color: #ffffff;
+  }
+
+  &__error-message {
+    position: absolute;
+    bottom: -3px;
   }
 }

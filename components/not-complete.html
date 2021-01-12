@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/not-complete.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal not-complete">
+      <div class="standard-modal__header">
+        <div class="standard-modal__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+      </div>
+
+      <div class="not-complete__content">
+        <h2 class="not-complete__title">
+          The registration is not complete
+        </h2>
+
+        <h4 class="not-complete__text">
+          To make sure that you will be able to seamlessly withdraw your money,
+          follow the link that was sent to the email specified during the
+          regisnranion. You are also advised to check your spam folder
+        </h4>
+
+        <a href="javascript:void(0);" class="not-complete__link">
+          send the link again
+        </a>
+
+        <div class="not-complete__timer">
+          Reset
+          <span>
+            14:59
+          </span>
+        </div>
+
+        <button class="button button--primary not-complete__button">
+          OKAY
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

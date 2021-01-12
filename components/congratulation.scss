@@ -1,0 +1,64 @@
+.congratulation {
+  max-width: 704px;
+  width: 100%;
+  height: 528px;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & > h2 {
+      margin-top: 107px;
+      margin-bottom: 24px;
+      font-family: "russoone", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  &__subtext {
+    margin-bottom: 11px;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__text {
+    max-width: 500px;
+    width: 100%;
+    font-family: "russoone", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__button {
+    width: 198px;
+    height: 36px;
+    position: absolute;
+    bottom: 35px;
+  }
+}

@@ -6,3 +6,17 @@
     url("/assets/font/RussoOne-Regular.woff") format("woff"),
     url("/assets/font/russoone.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "notosansjp";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("/assets/font/NotoSansJP-Light.otf");
+}
+
+@font-face {
+  font-family: "notosansjp";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/font/NotoSansJP-Regular.otf");
+}

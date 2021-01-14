@@ -89,6 +89,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     font-family: "russoone";
     font-style: normal;
     font-weight: normal;
@@ -101,12 +102,34 @@ body {
       background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      &::before {
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -15px;
+        content: "";
+        background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
+        border-radius: 0 5px 5px 0;
+      }
     }
 
     &--active {
       background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      &::before {
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -15px;
+        content: "";
+        background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
+        border-radius: 0 5px 5px 0;
+      }
     }
 
     &:hover .hashclash__sidebar-navigation-link-icon path {
@@ -822,14 +845,14 @@ body {
   }
 
   &__table-titles {
-    height: 52px;
-    padding: 25px 13px 12px 30px;
+    padding: 25px 0 13px 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   &__table-title {
+    width: 74px;
+    margin-left: 14px;
     font-family: "russoone", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -839,6 +862,11 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #ffffff;
+
+    &:last-child {
+      width: auto;
+      margin-left: 2px;
+    }
   }
 
   &__table-informations-parent {
@@ -868,7 +896,6 @@ body {
 
   &__table-informations {
     width: 100%;
-    max-height: 328px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -880,7 +907,7 @@ body {
 
   &__table-information {
     width: 100%;
-    height: 32px;
+    padding: 3px 0;
     padding-left: 16px;
     display: flex;
     flex-direction: row;
@@ -889,15 +916,15 @@ body {
     position: relative;
     cursor: pointer;
 
-    // &:hover {
-    //   background: linear-gradient(
-    //       270deg,
-    //       rgba(0, 169, 255, 0.27) 0.31%,
-    //       rgba(17, 76, 106, 0) 3.92%
-    //     ),
-    //     #0a1e1e;
-    //   opacity: 0.5;
-    // }
+    &:hover {
+      background: linear-gradient(
+          270deg,
+          rgba(0, 169, 255, 0.27) 0.31%,
+          rgba(17, 76, 106, 0) 3.92%
+        ),
+        #0a1e1e;
+      opacity: 0.5;
+    }
 
     &::after {
       width: 100%;
@@ -917,7 +944,12 @@ body {
   }
 
   &__table-text {
-    padding: 3px 0;
+    max-width: 81px;
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-family: "russoone", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -926,16 +958,20 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #ffffff;
-  }
+    word-break: break-word;
 
-  &__table-level {
-    max-width: 77px;
-    width: 100%;
-    height: 100%;
-    margin-right: 7px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    & > h6 {
+      width: 26px;
+      height: 26px;
+      margin-right: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-image: url("/assets/images/Vector.svg");
+      background-position: center;
+      background-size: cover;
+    }
 
     &--currency {
       width: 77px;
@@ -950,31 +986,15 @@ body {
         background-image: url("/assets/images/blue-arrow-press.svg");
       }
     }
-
-    & > h6 {
-      width: 26px;
-      height: 26px;
-      margin-right: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background-image: url("/assets/images/Vector.svg");
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
-  &__table-bet {
-    margin-right: 14px;
   }
 
   &__table-order {
     width: 8px;
     height: 8px;
-    margin-left: 25px;
+    display: flex;
+    position: absolute;
+    right: 27px;
     background-image: url("/assets/images/order.svg");
-    display: none;
 
     &--active {
       display: flex;

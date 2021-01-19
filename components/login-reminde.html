@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/login-reminde.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal">
+      <div class="standard-modal__header">
+        <div class="standard-modal__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+      </div>
+
+      <div class="login-reminde">
+        <h2>
+          login reminde
+        </h2>
+
+        <p class="login-reminde__message">
+          An sms with your login has been sent please check your mobile phone
+        </p>
+
+        <div class="login-reminde__inputs-parent">
+          <div class="login-reminde__input-holder">
+            <div class="login-reminde__input-check"></div>
+            <input
+              placeholder="Phone Number"
+              type="text"
+              class="login-reminde__input"
+            />
+          </div>
+
+          <div class="login-reminde__input-holder">
+            <div class="login-reminde__input-check"></div>
+            <input
+              placeholder="Email"
+              type="text"
+              class="login-reminde__input"
+            />
+          </div>
+        </div>
+
+        <button
+          class="button button--primary login-reminde__button login-reminde__none"
+        >
+          send
+        </button>
+
+        <div class="login-reminde__button-holder">
+          <div class="login-reminde__button-parent">
+            <button
+              class="button login-reminde__button-diff login-reminde__button-diff--send"
+            >
+              send
+            </button>
+
+            <div class="login-reminde__timer">
+              reset
+              <span>
+                9.59
+              </span>
+            </div>
+          </div>
+
+          <button class="button button--primary login-reminde__button-diff">
+            close
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

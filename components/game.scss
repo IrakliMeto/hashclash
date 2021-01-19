@@ -873,25 +873,6 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-
-    &--bg {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: linear-gradient(
-          67.24deg,
-          rgba(255, 0, 255, 0.15) 28.51%,
-          rgba(12, 28, 42, 0) 100.76%
-        ),
-        radial-gradient(
-          127.46% 47.79% at 43.93% 52.21%,
-          #009e6c 0%,
-          #0c1a1d 100%
-        );
-      opacity: 0.4;
-    }
   }
 
   &__table-informations {
@@ -916,16 +897,6 @@ body {
     position: relative;
     cursor: pointer;
 
-    &:hover {
-      background: linear-gradient(
-          270deg,
-          rgba(0, 169, 255, 0.27) 0.31%,
-          rgba(17, 76, 106, 0) 3.92%
-        ),
-        #0a1e1e;
-      opacity: 0.5;
-    }
-
     &::after {
       width: 100%;
       height: 1px;
@@ -941,6 +912,34 @@ body {
         rgba(46, 36, 78, 0) 100%
       );
     }
+
+    &--active {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(
+          270deg,
+          rgba(0, 169, 255, 0.27) 0.31%,
+          rgba(17, 76, 106, 0) 3.92%
+        ),
+        #0a1e1e;
+      opacity: 0.1;
+    }
+
+    &--bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+          270deg,
+          rgba(0, 169, 255, 0.27) 0.31%,
+          rgba(17, 76, 106, 0) 3.92%
+        ),
+        #0a1e1e;
+      opacity: 0.4;
+    }
   }
 
   &__table-text {
@@ -950,6 +949,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 2;
     font-family: "russoone", sans-serif;
     font-style: normal;
     font-weight: normal;

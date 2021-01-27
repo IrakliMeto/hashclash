@@ -1,10 +1,15 @@
 @font-face {
-  font-family: "russoone";
+  font-family: "Play";
   font-style: normal;
-  font-weight: normal;
-  src: url("/assets/font/RussoOne-Regular.ttf") format("ttf"),
-    url("/assets/font/RussoOne-Regular.woff") format("woff"),
-    url("/assets/font/russoone.woff2") format("woff2");
+  font-weight: regular;
+  src: url("/assets/font/Play-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/font/Play-Bold.ttf");
 }
 
 @font-face {

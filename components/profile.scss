@@ -251,9 +251,14 @@
   &__content-information {
     max-width: 344px;
     width: 100%;
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__content-information-title {
@@ -282,6 +287,11 @@
     &--space {
       margin-top: 0px;
     }
+
+    &--select {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__content-input-title {
@@ -292,6 +302,21 @@
     line-height: 14px;
     letter-spacing: 0.03em;
     color: #132430;
+  }
+
+  &__content-input-holder {
+    position: relative;
+  }
+
+  &__content-input-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 
   &__content-input {
@@ -305,6 +330,15 @@
     );
     box-shadow: inset -4px 4px 15px #0f2129;
     border-radius: 5px;
+
+    &--select {
+      width: 104px;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__input-error-message {
@@ -315,8 +349,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.05em;
     color: #ee9152;
 
@@ -327,6 +359,7 @@
 
   &__content-text {
     margin-top: 23px;
+    margin-bottom: 26px;
     font-family: Play;
     font-style: normal;
     font-weight: bold;
@@ -335,5 +368,28 @@
     align-items: center;
     letter-spacing: 0.05em;
     color: #132430;
+  }
+
+  &__content-input-select-holder {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__button {
+    max-width: 196px;
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    right: 56px;
+    bottom: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #2f6c61 0%, #133333 100%);
+    box-shadow: 0px 0px 8.02604px #ffffff,
+      -4.01302px -4.01302px 16.0521px #00ffe0,
+      4.01302px 4.01302px 9.63125px #23fd00,
+      inset 4.01302px -4.01302px 12.0391px 4.01302px rgba(40, 38, 63, 0.66),
+      inset -4.01302px 4.01302px 8.02604px rgba(0, 255, 194, 0.7);
+    border-radius: 100px;
   }
 }

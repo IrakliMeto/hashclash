@@ -708,11 +708,18 @@
                           New password
                         </span>
 
-                        <input
-                          type="password"
-                          placeholder=""
-                          class="main-input profile__content-input"
-                        />
+                        <div class="profile__content-input-holder">
+                          <img
+                            src="/assets/images/visibility.svg"
+                            alt="Visibility Icon"
+                            class="profile__content-input-icon"
+                          />
+                          <input
+                            type="password"
+                            placeholder=""
+                            class="main-input profile__content-input"
+                          />
+                        </div>
 
                         <p
                           class="profile__input-error-message profile__input-error-message--active"
@@ -726,11 +733,18 @@
                           Confirm new password
                         </span>
 
-                        <input
-                          type="password"
-                          placeholder=""
-                          class="main-input profile__content-input"
-                        />
+                        <div class="profile__content-input-holder">
+                          <img
+                            src="/assets/images/visibility.svg"
+                            alt="Visibility Icon"
+                            class="profile__content-input-icon"
+                          />
+                          <input
+                            type="password"
+                            placeholder=""
+                            class="main-input profile__content-input"
+                          />
+                        </div>
 
                         <p
                           class="profile__input-error-message profile__input-error-message--active"
@@ -744,8 +758,110 @@
                     <h6 class="profile__content-information-title">
                       Personal information
                     </h6>
+
+                    <div class="profile__content-inputs-box">
+                      <div
+                        class="profile__content-input-parent profile__content-input-parent--space"
+                      >
+                        <span class="profile__content-input-title">
+                          Surname
+                        </span>
+
+                        <input
+                          type="text"
+                          placeholder=""
+                          class="main-input profile__content-input"
+                        />
+
+                        <p class="profile__input-error-message">
+                          *Please check, there is no such email
+                        </p>
+                      </div>
+
+                      <div class="profile__content-input-parent">
+                        <span class="profile__content-input-title">
+                          Phone number
+                        </span>
+
+                        <input
+                          type="text"
+                          placeholder=""
+                          class="main-input profile__content-input"
+                        />
+
+                        <p class="profile__input-error-message">
+                          *Please check, there is no such email
+                        </p>
+                      </div>
+
+                      <div class="profile__content-input-parent">
+                        <span class="profile__content-input-title">
+                          Name
+                        </span>
+
+                        <input
+                          type="text"
+                          placeholder=""
+                          class="main-input profile__content-input"
+                        />
+
+                        <p
+                          class="profile__input-error-message profile__input-error-message--active"
+                        >
+                          *Please check, there is no such email
+                        </p>
+                      </div>
+
+                      <div class="profile__content-input-parent">
+                        <span class="profile__content-input-title">
+                          Country
+                        </span>
+
+                        <select
+                          name=""
+                          id=""
+                          class="main-input profile__content-input"
+                        ></select>
+
+                        <p
+                          class="profile__input-error-message profile__input-error-message--active"
+                        >
+                          *Please check, there is no such email
+                        </p>
+                      </div>
+
+                      <div
+                        class="profile__content-input-parent profile__content-input-parent--select"
+                      >
+                        <div class="profile__content-input-select-holder">
+                          <select
+                            name=""
+                            id=""
+                            class="main-input profile__content-input profile__content-input--select"
+                          ></select>
+                          <select
+                            name=""
+                            id=""
+                            class="main-input profile__content-input profile__content-input--select"
+                          ></select>
+                          <select
+                            name=""
+                            id=""
+                            class="main-input profile__content-input profile__content-input--select"
+                          ></select>
+                        </div>
+
+                        <p class="profile__input-error-message">
+                          *Please check, there is no such email
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+                <button class="button profile__button">
+                  confirm
+                </button>
               </div>
             </div>
           </div>

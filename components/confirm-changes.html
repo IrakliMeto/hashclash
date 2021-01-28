@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/confirm-changes.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="modal-information confirm">
+      <div class="modal-information__header">
+        <div class="modal-information__logo">
+          <!-- here is background image -->
+        </div>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="modal-information__close-icon"
+        />
+      </div>
+
+      <div class="confirm__content">
+        <p class="confirm__text">
+          confirm changes
+          <span>
+            Please enter your account password to make changes
+          </span>
+        </p>
+
+        <div class="confirm__input-holder">
+          <span class="confirm__input-title">
+            Password
+            <div class="confirm__input-parent">
+              <input type="password" class="main-input" />
+              <img src="/assets/images/visibility.svg" alt="visibility" />
+            </div>
+
+            <p class="confirm__error-message">
+              *You have entered the wrong Password.Please, try again
+            </p>
+          </span>
+        </div>
+
+        <a class="confirm__link" href="#">
+          Forgot Password?
+        </a>
+
+        <button class="button button--primary confirm__button">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

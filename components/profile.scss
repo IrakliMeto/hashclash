@@ -357,6 +357,40 @@
     }
   }
 
+  &__content-input-validations {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: revert;
+    flex-wrap: wrap;
+  }
+
+  &__content-input-validation {
+    width: 50%;
+    margin: 3px 0;
+    font-family: "notosansjp", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #ee9152;
+
+    & > span {
+      margin-left: 4px;
+    }
+
+    &--active {
+      background: linear-gradient(91.15deg, #dbff00 20.3%, #74ff00 82.15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      & .profile__content-input-validation-icon path {
+        fill: url(#grad1);
+      }
+    }
+  }
+
   &__content-text {
     margin-top: 23px;
     margin-bottom: 26px;

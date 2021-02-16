@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/order-modal.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal order">
+      <div class="standard-modal__header">
+        <h2 class="order__header-title">
+          Оппонент не найден
+        </h2>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+      </div>
+
+      <p class="order__text">
+        Можешь Оставить запрос на который тебе со временем ответит соперник или
+        подождать тут еще немного
+      </p>
+
+      <div class="order__content-holder">
+        <div class="order__content">
+          <div class="order__box">
+            <ol class="order__box-item">
+              <li>Оставляем запрос на игру:</li>
+            </ol>
+
+            <div class="order__box-icon-holder">
+              <img src="/assets/images/male-order.svg" alt="Male Icon" />
+              <div class="order__box-span-parent">
+                <span>
+                  оставить запрос
+                </span>
+
+                <img src="/assets/images/tap-order.svg" alt="Tap Icon" />
+              </div>
+            </div>
+
+            <p class="order__box-center-text">
+              Он отобразится красным на панели уровней и валюты
+            </p>
+
+            <img
+              class="order__box-image"
+              src="/assets/images/group1899.png"
+              alt="Value Image"
+            />
+
+            <div class="order__box-bottom-icon-holder">
+              <img src="/assets/images/order-bottom-icon.svg" alt="Icon" />
+              <div class="order__box-bottom-bg">
+                <img
+                  class="order__box-bottom-icon"
+                  src="/assets/images/order-bg.svg"
+                  alt="Icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="order__box">
+            <ol class="order__box-text">
+              <li>
+                Как только противник ответит на твой запрос такой же ставкой
+                <h5>
+                  ИГРА НЕЧНЕТСЯ АВТОМАТИЧЕСКИЕ
+                </h5>
+                сли в этот момент тебя не было в игре не волнуйся, ты узнаешь ее
+                результат по окончании раунда
+              </li>
+            </ol>
+          </div>
+
+          <div class="order__box">
+            <ol class="order__box-child">
+              <li>
+                Ты можешь
+                <span>
+                  отменить запрос
+                </span>
+                ДО ТОГО как будет найден противник
+              </li>
+            </ol>
+
+            <div class="order__box-child-item">
+              <!-- here is background image -->
+            </div>
+          </div>
+        </div>
+
+        <div class="order__bottom">
+          <div class="order__button-holder">
+            <button class="button order__button-left">
+              <img src="/assets/images/hourglass.svg" alt="" />
+              Подождать
+            </button>
+
+            <button class="button order__button-right">
+              оставить запрос
+            </button>
+          </div>
+
+          <div class="order__checkbox-parent">
+            <button
+              class="order__checkbox-button order__checkbox-button--active"
+            ></button>
+
+            <span class="order__checkbox-text">
+              Больше не надо объяснять, спрашивайте только выбор
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

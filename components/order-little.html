@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/reset.min.css" />
+    <link rel="stylesheet" href="/dist/css/font.min.css" />
+    <link rel="stylesheet" href="/dist/css/helper.min.css" />
+    <link rel="stylesheet" href="/dist/css/standard-modal.min.css" />
+    <link rel="stylesheet" href="/dist/css/authentification.min.css" />
+    <link rel="stylesheet" href="/dist/css/order-modal.min.css" />
+    <title>modal</title>
+  </head>
+  <body>
+    <div class="modal-backdrop">
+      <!-- here is backdrop -->
+    </div>
+    <div class="standard-modal order order__little">
+      <div class="standard-modal__header">
+        <h2 class="order__header-title">
+          Оппонент не найден
+        </h2>
+
+        <img
+          src="/assets/images/x.svg"
+          alt="Close icon"
+          class="standard-modal__close-icon"
+        />
+      </div>
+
+      <p class="order__little-text">
+        Можешь Оставить запрос на который тебе со временем ответит соперник или
+        подождать тут еще немного
+      </p>
+
+      <div class="order__button-holder order__button-holder-little">
+        <button class="button order__button-left">
+          <img src="/assets/images/hourglass.svg" alt="" />
+          Подождать
+        </button>
+
+        <button class="button order__button-right">
+          оставить запрос
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
